@@ -1,0 +1,29 @@
+{
+  "name": "fly-ny-api",
+  "version": "1.0.0",
+  "description": "this nodejs application is a API for getting datas from amadeus and serving request",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mordor-ai/fly-ny-api.git"
+  },
+  "keywords": [
+    "ai",
+    "api",
+    "fly",
+    "new-york"
+  ],
+  "author": "Emmanuel Pellegrin / Thierry Pailhas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mordor-ai/fly-ny-api/issues"
+  },
+  "homepage": "https://github.com/mordor-ai/fly-ny-api#readme",
+  "dependencies": {
+    "itemsapi": "^1.0.74",
+    "node-cron": "^2.0.3"
+  }
+}
