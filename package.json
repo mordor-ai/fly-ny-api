@@ -23,7 +23,10 @@
   },
   "homepage": "https://github.com/mordor-ai/fly-ny-api#readme",
   "dependencies": {
+    "fs": "0.0.1-security",
     "itemsapi": "^1.0.74",
-    "node-cron": "^2.0.3"
+    "node-cron": "^2.0.3",
+    "path": "^0.12.7",
+    "winston": "^3.2.1"
   }
 }
