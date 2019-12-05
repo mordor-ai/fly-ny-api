@@ -1,10 +1,11 @@
-<<<<<<< HEAD
+
 # https://git-scm.com/docs/gitignore
 # https://help.github.com/articles/ignoring-files
 # Example .gitignore files: https://github.com/github/gitignore
 /bower_components/
 /node_modules/
-=======
+#npm
+package-lock.json
 # Logs
 logs
 *.log
@@ -66,6 +67,5 @@ typings/
 
 # next.js build output
 .next
->>>>>>> origin/master
 
-package-lock.json
+
