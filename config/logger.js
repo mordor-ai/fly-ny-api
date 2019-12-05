@@ -6,17 +6,11 @@
      /*globals require,module,process*/
      var path = require('path'),
          fs = require('fs'),
-         /*config = require('../config/config'),
-        path = require('path'),
-        */
-         
-         config = require( path.join(__dirname, '../config/config.js'));
+         config = require( path.join(__dirname, '../config/config.js')),
          winston = require('winston');
      // winston.emitErrs = true;
      // Create the "log" folder if it doesn't exist
 
-
-     // Create the "sift" folder if it doesn't exist
      var dir = config.logDir;
      fs.exists(config.logDir, function (exists) {
          if (!exists) {
@@ -33,7 +27,6 @@
      });
 
      const logger = winston.createLogger({
-
          level: 'info',
          format: winston.format.json(),
          defaultMeta: {
