@@ -5,11 +5,13 @@ jslint maxerr: 10, es6, node, single, for, bitwise, for, multivar
 */
 (function () {
     "use strict";
+    require("dotenv").config();
     var cron = require("node-cron"),
         config = require("./config/config.js"),
         logger = require("./config/logger.js"),
-        Amadeus = require("amadeus");
-
+        Amadeus = require("amadeus"),
+        mongoose = require("mongoose");
+    mongoose.connect(config.mongDBServer);
     var amadeus = new Amadeus({
         clientId: config.amadeusClientId,
         clientSecret: config.amadeusClientSecret,
