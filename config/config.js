@@ -20,4 +20,4 @@ exports.amadeusLogLevel = "debug";
 //https://fr.wikipedia.org/wiki/Liste_des_codes_AITA_des_a%C3%A9roports/P
 exports.departureCode = "PAR";
 exports.arrivalCode = "NYC";
-exports.mongDBServer = process.env.FLY_NY_API_MONGODB_URI || 'mongodb://localhost/your-app-name';
+exports.mongDBServer = process.env.FLY_NY_API_MONGODB_URI || 'mongodb://localhost/fy-ny-api';
